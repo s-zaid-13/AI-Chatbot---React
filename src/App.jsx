@@ -10,6 +10,7 @@ import { Loader } from "./components/Loader/Loader";
 
 function App() {
   const assistant = new Assistant();
+  document.body.classList.add('light');
   const [messages, setMessages] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [isStreaming, setStreaming] = useState(false);
