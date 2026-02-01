@@ -1,16 +1,43 @@
-# AI Chat Platform
+# react-ai-chatbot
 
-A React-based AI chat application that supports multiple pluggable LLM backends such as Gemini, OpenAI, and DeepSeek.  
-The platform provides real-time streaming responses, markdown rendering, and robust error handling within a modular, production-ready single-page application architecture.
+An AI-powered chatbot web application built with React and Vite, supporting multiple large language models including Google Gemini, OpenAI (GPT), and DeepSeekAI.
 
 ## Features
-- Multi-LLM support (Gemini, OpenAI, DeepSeek)
-- Real-time streaming chat responses
-- Markdown rendering
-- Error handling and fallback mechanisms
-- Modular and scalable SPA architecture
+- Conversational chatbot UI
+- Multiple AI assistants (Gemini, OpenAI, DeepSeekAI)
+- Streaming AI responses
+- Markdown-rendered messages
+- Light / Dark theme toggle
+- Loader animation during response generation
+- Responsive design for desktop and mobile
 
 ## Tech Stack
-- React
-- JavaScript / TypeScript
-- REST / Streaming APIs
+- React 19
+- Vite
+- OpenAI SDK
+- @google/generative-ai
+- DeepSeekAI (OpenAI-compatible API)
+- CSS Modules
+- ESLint
+
+## Project Structure
+- `src/App.jsx` – Main application logic and state management
+- `src/components/Chat` – Chat message rendering with markdown
+- `src/components/Controls` – Message input and send controls
+- `src/components/Loader` – Loading animation
+- `src/components/assistants` – AI provider integrations
+- `src/index.css` – Global styles
+- `.env.example` – Environment variable template
+
+## AI Assistants
+Each assistant is implemented as a separate module:
+- Google Gemini
+- OpenAI GPT
+- DeepSeekAI  
+
+Switching assistants requires minimal code changes.
+
+## Setup
+```bash
+npm install
+npm run dev
