@@ -1,12 +1,16 @@
-# React + Vite
+# AI Chat Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based AI chat application that supports multiple pluggable LLM backends such as Gemini, OpenAI, and DeepSeek.  
+The platform provides real-time streaming responses, markdown rendering, and robust error handling within a modular, production-ready single-page application architecture.
 
-Currently, two official plugins are available:
+## Features
+- Multi-LLM support (Gemini, OpenAI, DeepSeek)
+- Real-time streaming chat responses
+- Markdown rendering
+- Error handling and fallback mechanisms
+- Modular and scalable SPA architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- React
+- JavaScript / TypeScript
+- REST / Streaming APIs
